@@ -14,6 +14,7 @@ app.use(express.static("public"))
 // app.use(cookieParser())
 
 
+
 //router
  import authRoutes from  "./src/router/auth.router.js"
  import activityRoutes from "./src/router/todoActivity.router.js"

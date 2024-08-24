@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
-const dbPath = "mongodb+srv://97jamali:123654@cluster0.7up9lgr.mongodb.net/Blog"
 import chalk from "chalk";
+import dotenv from 'dotenv';
+dotenv.config();
 
+const dbPath = process.env.MONGODB_URI
 async function dbConnection() {
   try {
     await mongoose.connect(dbPath, {
